@@ -16,12 +16,13 @@
 		BCB796771FC62F3100305EF7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BCB796761FC62F3100305EF7 /* Podfile */; };
 		BCB796791FC6310400305EF7 /* AwesomeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB796781FC6310400305EF7 /* AwesomeLabel.swift */; };
 		BCD236C02016D38800056914 /* AwesomeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD236BF2016D38700056914 /* AwesomeLogger.swift */; };
+		C785DFDA296CD66500EA7E1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C785DFD9296CD66500EA7E1F /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72F997A469E69F4146DF3864 /* Pods_Buglife_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buglife_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB796611FC62EF300305EF7 /* Buglife Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buglife Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCB796641FC62EF300305EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCB796641FC62EF300305EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
 		BCB796661FC62EF300305EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCB796691FC62EF300305EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB7966B1FC62EF300305EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +30,8 @@
 		BCB796701FC62EF300305EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB796761FC62F3100305EF7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCB796781FC6310400305EF7 /* AwesomeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeLabel.swift; sourceTree = "<group>"; };
-		BCD236BF2016D38700056914 /* AwesomeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeLogger.swift; path = ../../Swift/AwesomeLogger.swift; sourceTree = "<group>"; };
+		BCD236BF2016D38700056914 /* AwesomeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = AwesomeLogger.swift; path = ../../Swift/AwesomeLogger.swift; sourceTree = "<group>"; tabWidth = 4; };
+		C785DFD9296CD66500EA7E1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE6D978DBF5F3BA016F795AF /* Pods-Buglife Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buglife Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buglife Example/Pods-Buglife Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FDE01A1C4FA868079C717087 /* Pods-Buglife Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buglife Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Buglife Example/Pods-Buglife Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 			children = (
 				BCD236BF2016D38700056914 /* AwesomeLogger.swift */,
 				BCB796641FC62EF300305EF7 /* AppDelegate.swift */,
+				C785DFD9296CD66500EA7E1F /* SceneDelegate.swift */,
 				BCB796661FC62EF300305EF7 /* ViewController.swift */,
 				BCB796781FC6310400305EF7 /* AwesomeLabel.swift */,
 				BCB796761FC62F3100305EF7 /* Podfile */,
@@ -126,12 +129,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Buglife;
 				TargetAttributes = {
 					BCB796601FC62EF300305EF7 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C785DFDA296CD66500EA7E1F /* SceneDelegate.swift in Sources */,
 				BCB796791FC6310400305EF7 /* AwesomeLabel.swift in Sources */,
 				BCB796671FC62EF300305EF7 /* ViewController.swift in Sources */,
 				BCB796651FC62EF300305EF7 /* AppDelegate.swift in Sources */,
@@ -266,6 +270,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -291,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,6 +330,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -344,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -360,11 +366,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2Y7L3V99D;
 				INFOPLIST_FILE = "Buglife Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Buglife.Buglife-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -377,11 +383,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2Y7L3V99D;
 				INFOPLIST_FILE = "Buglife Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Buglife.Buglife-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

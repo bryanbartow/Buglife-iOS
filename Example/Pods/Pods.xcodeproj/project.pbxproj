@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -370,7 +370,7 @@
 		55338FEF7EB70C1506FED462D137A0F2 /* Pods-Buglife Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Buglife Example.debug.xcconfig"; sourceTree = "<group>"; };
 		573F19E91505810AE9EECFF4D9B0A844 /* LIFELog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELog.m; sourceTree = "<group>"; };
 		5807A0C9FBD6CE7D72F9BFF51CD1070D /* LIFEReportBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportBuilder.m; sourceTree = "<group>"; };
-		5990909A825005964F25F4E237E9F494 /* LIFEReportTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportTableViewController.m; sourceTree = "<group>"; };
+		5990909A825005964F25F4E237E9F494 /* LIFEReportTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = LIFEReportTableViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		59C3EC5EC6E8401555C2A1E3C693905F /* UITableView+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LIFEAdditions.m"; sourceTree = "<group>"; };
 		5D30913D294146219131C5C8540A6443 /* LIFEReproStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReproStep.m; sourceTree = "<group>"; };
 		5E58CFEAF650B8E29A804CA166788F65 /* LIFEContainerAlertToImageEditorAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerAlertToImageEditorAnimator.h; sourceTree = "<group>"; };
@@ -385,7 +385,7 @@
 		649D903167477AFE6D23EA058BFE414C /* LIFEFreeformGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEFreeformGestureRecognizer.h; sourceTree = "<group>"; };
 		64E57679A2AD0DF108BCB814979FC3F5 /* LIFEToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEToastView.h; sourceTree = "<group>"; };
 		66AA15A918922919B64A1D42502267F3 /* LIFEAVPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAVPlayerViewController.m; sourceTree = "<group>"; };
-		6717E7AD657A459F7BFF3B02C144DDBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6717E7AD657A459F7BFF3B02C144DDBF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		67AAF0EC5A6B79AC83AB61D30CD4E1AF /* LIFESwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFESwizzler.m; sourceTree = "<group>"; };
 		69BA5AB1C5865E295F8D22F0F85FDE09 /* Buglife-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Buglife-umbrella.h"; sourceTree = "<group>"; };
 		69CF8DA8373171FBB78A8138D28C83DA /* LIFEReportViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -433,7 +433,7 @@
 		90DACE6DD019AA1E00D613B33B239C37 /* LIFENotificationLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFENotificationLogger.m; sourceTree = "<group>"; };
 		9208CE57AABAB7EBF3FE08A73A50BA47 /* NSString+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+LIFEAdditions.h"; sourceTree = "<group>"; };
 		925CB4445A88EB6952AB0F385CB8E8D5 /* LIFENavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFENavigationController.m; sourceTree = "<group>"; };
-		94706450E7995951D4E4F155433DA5FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		94706450E7995951D4E4F155433DA5FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9530995266A0EBB1124F8B28E78A2FFA /* LIFEAlertAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertAnimator.m; sourceTree = "<group>"; };
 		9570FB859956C13BAEE48BF89CD71864 /* LIFEDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEDeviceInfo.m; sourceTree = "<group>"; };
 		97058DFA41545B56900FDE572832FFF6 /* LIFEGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEGeometry.m; sourceTree = "<group>"; };
@@ -442,9 +442,9 @@
 		9998E161ED3B7E5945498E13FBF1FA3A /* LIFEUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEUserDefaults.h; sourceTree = "<group>"; };
 		9B48CC1BF31047B559C127278498CF4B /* LIFECategories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFECategories.m; sourceTree = "<group>"; };
 		9CF92140F2C3A5A484DF3E81C64BCEE5 /* NSMutableDictionary+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+LIFEAdditions.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E58C4047BC6BFFBEEBC8FC66E39A2DE /* UIBezierPath+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LIFEAdditions.m"; sourceTree = "<group>"; };
-		9EA3B9AFF744119C5F4697E65BD68BB8 /* Pods_Buglife_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Buglife_Example.framework; path = "Pods-Buglife Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA3B9AFF744119C5F4697E65BD68BB8 /* Pods_Buglife_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buglife_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DDC8F4A703E5A9B035A34D69096213 /* LIFETelephonyNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETelephonyNetworkInfo.h; sourceTree = "<group>"; };
 		A2DD3E78CCB636B61896D9CAB00A87AF /* LIFEWhatHappenedTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEWhatHappenedTextView.h; sourceTree = "<group>"; };
 		A2E9DBCEA2F87158690C758C256C0D23 /* Buglife+UIStuff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Buglife+UIStuff.m"; sourceTree = "<group>"; };
@@ -475,7 +475,7 @@
 		BC2609BC0BFC6636D103BFF507D523AA /* LIFEReportAttachmentImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportAttachmentImpl.m; sourceTree = "<group>"; };
 		BD73A0EE5E00DCC8A6859621F95E9DCB /* LIFETelephonyNetworkInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETelephonyNetworkInfo.m; sourceTree = "<group>"; };
 		BE3BF1A490E3C150E6B118804405DFE9 /* LIFEScreenshotAnnotatorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEScreenshotAnnotatorViewController.m; sourceTree = "<group>"; };
-		BFD47550BA316385F96847A2CBB9261C /* Buglife.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Buglife.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFD47550BA316385F96847A2CBB9261C /* Buglife.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Buglife.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C0CBC978243F5E1368B2DC2C3CA86017 /* Buglife+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Buglife+Protected.h"; sourceTree = "<group>"; };
 		C1B1E0316540ED5D70FFDAD863FAEBCD /* LIFEArrowAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEArrowAnnotationView.h; sourceTree = "<group>"; };
 		C1BFA89BB333F886E016DE61A0A9461F /* LIFEReportView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportView.h; sourceTree = "<group>"; };
@@ -518,7 +518,7 @@
 		EB9FBD3D149FBE723B48A1F12434661C /* LIFEDependencyLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDependencyLoader.h; sourceTree = "<group>"; };
 		EC1605D5AA6BA2FEFBA26A7F1E76BAA9 /* LIFEStepsToReproTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEStepsToReproTableViewController.h; sourceTree = "<group>"; };
 		EC8149403094EAF366F31FD4554194CD /* LIFEAlertActionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertActionView.m; sourceTree = "<group>"; };
-		ED20DE5E9C257028D4E4A2FC8D4D60A5 /* Buglife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Buglife.framework; path = Buglife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED20DE5E9C257028D4E4A2FC8D4D60A5 /* Buglife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Buglife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED72D3DFF4B480BF5376070975FDB8F4 /* LIFEUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEUserDefaults.m; sourceTree = "<group>"; };
 		EEDA039028D8B9AF02F445E095F78C0C /* LIFEJelloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEJelloLayer.m; sourceTree = "<group>"; };
 		EFD4F72301A61747519C0ED226ED16BC /* LIFEPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEPanGestureRecognizer.h; sourceTree = "<group>"; };
@@ -656,7 +656,6 @@
 				2E8895DE222F13B60D2B67EA4E6BF1D6 /* LIFEWindowBlindsAnimator.h */,
 				127B7510E3C90596594DA9D9800EBD8A /* LIFEWindowBlindsAnimator.m */,
 			);
-			name = "Container Window";
 			path = "Container Window";
 			sourceTree = "<group>";
 		};
@@ -687,7 +686,6 @@
 				EFD4F72301A61747519C0ED226ED16BC /* LIFEPanGestureRecognizer.h */,
 				0AD3F22EB32CA47A7F418EAD10EC39C8 /* LIFEPanGestureRecognizer.m */,
 			);
-			name = GestureRecognizers;
 			path = GestureRecognizers;
 			sourceTree = "<group>";
 		};
@@ -787,7 +785,6 @@
 				54C8ED81A91F46E23C9C8C718446B076 /* LIFETTYLogger.h */,
 				A56EB1911CA2ECA9A3413B69CB2148C7 /* LIFETTYLogger.m */,
 			);
-			name = Logging;
 			path = Logging;
 			sourceTree = "<group>";
 		};
@@ -799,7 +796,6 @@
 				B1BE5028EEBFD20766ECE0D7850B3F48 /* LIFEJelloView.h */,
 				2152E6561C479B344B359CF19177E076 /* LIFEJelloView.m */,
 			);
-			name = "Jello View";
 			path = "Jello View";
 			sourceTree = "<group>";
 		};
@@ -846,7 +842,6 @@
 				C9CE5CEF1DC74A42607333FD9C5CA6E5 /* LIFELoupeAnnotationView.h */,
 				412C602FF0D7FBC2671BDC02BE3D4585 /* LIFELoupeAnnotationView.m */,
 			);
-			name = AnnotationViews;
 			path = AnnotationViews;
 			sourceTree = "<group>";
 		};
@@ -909,7 +904,6 @@
 				7596906DA306AA25B38598427507B5D2 /* LIFEAlertView.h */,
 				2296E0B1AA5E2E68D3319136759795E0 /* LIFEAlertView.m */,
 			);
-			name = "Alert View";
 			path = "Alert View";
 			sourceTree = "<group>";
 		};
@@ -984,7 +978,6 @@
 				97B0310AA51BE90D78FA3DCFB034DBEC /* LIFEToolButton.h */,
 				ACCAF24598C83940D79713CB0CB4E064 /* LIFEToolButton.m */,
 			);
-			name = "Image Editor";
 			path = "Image Editor";
 			sourceTree = "<group>";
 		};
@@ -1027,7 +1020,6 @@
 				64E57679A2AD0DF108BCB814979FC3F5 /* LIFEToastView.h */,
 				4ECBE18CE54B61C1D389127D2FFFFEAE /* LIFEToastView.m */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -1231,6 +1223,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -1623,8 +1616,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

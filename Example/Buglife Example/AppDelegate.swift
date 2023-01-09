@@ -20,18 +20,24 @@ import UIKit
 import Buglife
 import CoreLocation
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate, BuglifeDelegate, CLLocationManagerDelegate {
 
-    var window: UIWindow?
     var locationManager: CLLocationManager?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Buglife.shared().start(withEmail: "<#Your_email_here#>") // Replace with your email to send bug reports
+        Buglife.shared().start(withEmail: "Your_email_here") // Replace with your email to send bug reports
         Buglife.shared().invocationOptions = [.shake, .screenshot, .floatingButton]
         Buglife.shared().delegate = self
         Buglife.shared().inputFields = LIFETextInputField.bugDetailInputFields()
+        
+        let appearance = Buglife.shared().appearance
+        appearance.barTintColor = .white
+        appearance.tintColor = .purple
+        appearance.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor.rawValue: UIColor.black
+        ]
+      
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         let authStatus = CLLocationManager.authorizationStatus()

@@ -34,8 +34,27 @@
     viewController.statusBarHidden = [[UIApplication sharedApplication] isStatusBarHidden];
     
     LIFEOverlayWindow *window = [[self alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  if (@available(iOS 13.0, *)) {
+    NSSet<UIScene *>*connectedScenes = UIApplication.sharedApplication.connectedScenes;
+    
+    if (connectedScenes.count == 0) {
+      // Project use AppDelegate
+      window.rootViewController = viewController;
+      window.windowLevel = LIFEOverlayWindowLevel();
+    } else {
+      for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
+        if ([scene.delegate conformsToProtocol:@protocol(UIWindowSceneDelegate)]) {
+          window = [[self alloc] initWithWindowScene: (UIWindowScene *)scene];
+          window.rootViewController = viewController;
+          window.windowLevel = UIWindowLevelAlert + 2;
+        }
+      }
+    }
+  } else {
+    // Fallback on earlier versions
     window.rootViewController = viewController;
     window.windowLevel = LIFEOverlayWindowLevel();
+  }
     return window;
 }
 
