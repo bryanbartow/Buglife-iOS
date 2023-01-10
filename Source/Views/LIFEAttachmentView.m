@@ -1,13 +1,13 @@
 //
 //  LIFEAttachmentView.m
 //  Copyright (C) 2017 Buglife, Inc.
-//  
+//
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
 //  You may obtain a copy of the License at
-//  
+//
 //       http://www.apache.org/licenses/LICENSE-2.0
-//  
+//
 //  Unless required by applicable law or agreed to in writing, software
 //  distributed under the License is distributed on an "AS IS" BASIS,
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -56,6 +56,7 @@ static const CGFloat kScreenshotViewPadding = 5;
         
         _textLabel = [[UILabel alloc] init];
         _textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        _textLabel.textColor = [UIColor blackColor];
         [self addSubview:_textLabel];
         
         _disclosureIndicatorView = [[UIImageView alloc] init];
@@ -68,7 +69,7 @@ static const CGFloat kScreenshotViewPadding = 5;
         _textLabel.translatesAutoresizingMaskIntoConstraints = NO;
         _disclosureIndicatorView.translatesAutoresizingMaskIntoConstraints = NO;
         
-        [_screenshotView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:kScreenshotViewPadding].active = YES;
+        [_screenshotView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:12].active = YES;
         [_screenshotView.topAnchor constraintEqualToAnchor:self.topAnchor constant:kScreenshotViewPadding].active = YES;
         [_screenshotView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-kScreenshotViewPadding].active = YES;
         [_screenshotView.heightAnchor constraintEqualToAnchor:_screenshotView.widthAnchor].active = YES;

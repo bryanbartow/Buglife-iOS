@@ -34,14 +34,14 @@
     // (x,y) is the tip of the arrow
     CGFloat x = CGRectGetMaxX(self.bounds)-3.0;
     CGFloat y = CGRectGetMidY(self.bounds);
-    const CGFloat R = 4.5;
+    const CGFloat R = 5.0;
     CGContextRef ctxt = UIGraphicsGetCurrentContext();
     CGContextMoveToPoint(ctxt, x-R, y-R);
     CGContextAddLineToPoint(ctxt, x, y);
     CGContextAddLineToPoint(ctxt, x-R, y+R);
     CGContextSetLineCap(ctxt, kCGLineCapSquare);
     CGContextSetLineJoin(ctxt, kCGLineJoinMiter);
-    CGContextSetLineWidth(ctxt, 3);
+    CGContextSetLineWidth(ctxt, 2);
 
     CGContextStrokePath(ctxt);
 }
