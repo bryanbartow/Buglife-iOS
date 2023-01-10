@@ -193,6 +193,8 @@
 		C52457D207A621B864A3CBCE3952339F /* LIFEOverlayWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA74083E4A744675D934B1904E63782 /* LIFEOverlayWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C56CA9F2D742C2237E36392185A3236C /* LIFEJSONLogFileFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 751953B6E9918B820A742B3ECE984C9A /* LIFEJSONLogFileFormatter.m */; };
 		C59998D66635C0372EBBABC979E701A4 /* LIFEContainerWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA0112D75977ED3E86EBF9A258FB282 /* LIFEContainerWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C785DFDE296E113200EA7E1F /* LIFEDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C785DFDD296E113200EA7E1F /* LIFEDisclosureIndicator.m */; };
+		C785DFDF296E128D00EA7E1F /* LIFEDisclosureIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = C785DFDB296E10DB00EA7E1F /* LIFEDisclosureIndicator.h */; };
 		C8009E64F434C0357A54D5F30995F5F5 /* LIFEDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748A0A4B3D1C77F0A53F0B07E2A22EC /* LIFEDataProvider.m */; };
 		C8AC494BA8AB0A1BE40B7AA58D834022 /* UIColor+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8485542549BAE8024157251DCB5200C5 /* UIColor+LIFEAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C8EC3664019343F5E11E9DC319E2EA03 /* LIFENetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E8FA1EB2B18AA0086BE6C289C2C190 /* LIFENetworkManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -487,6 +489,8 @@
 		C5B8F7153E10FF0DE525BA6FBF768234 /* UIColor+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LIFEAdditions.m"; sourceTree = "<group>"; };
 		C65AC97A1B0455A55082C43DD21C41B8 /* LIFETextInputField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIFETextInputField.m; path = Source/LIFETextInputField.m; sourceTree = "<group>"; };
 		C6ADAEFA6FFE691759F56A81070317E2 /* NSMutableDictionary+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LIFEAdditions.m"; sourceTree = "<group>"; };
+		C785DFDB296E10DB00EA7E1F /* LIFEDisclosureIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIFEDisclosureIndicator.h; sourceTree = "<group>"; };
+		C785DFDD296E113200EA7E1F /* LIFEDisclosureIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIFEDisclosureIndicator.m; sourceTree = "<group>"; };
 		C7A8DC6D486D0A98443C17A757AB9E95 /* LIFEAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAnnotationView.h; sourceTree = "<group>"; };
 		C9CE5CEF1DC74A42607333FD9C5CA6E5 /* LIFELoupeAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELoupeAnnotationView.h; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -920,6 +924,8 @@
 				0006B44FAFFB3E8D6004DC21B1918AB9 /* LIFEBugButtonWindow.m */,
 				28A5CD73A0B684083DBB8AAABD25BCCD /* LIFEComponentPickerCell.h */,
 				14A774722022F315B3C304D4CF00C982 /* LIFEComponentPickerCell.m */,
+				C785DFDB296E10DB00EA7E1F /* LIFEDisclosureIndicator.h */,
+				C785DFDD296E113200EA7E1F /* LIFEDisclosureIndicator.m */,
 				6B1DCACFFD9F25CF11424270FBAC726F /* LIFEFloatingButton.h */,
 				90876466A6F6C2E670F30927C11FFAD2 /* LIFEFloatingButton.m */,
 				3C0426B59C6E1E0838B0AE3231FFE5E2 /* LIFELocalizedStringProvider.h */,
@@ -990,7 +996,9 @@
 				4CA4522C91427DA186B80BCCD017E362 /* Products */,
 				44E14982DEA216434B20171FD68EC3F6 /* Targets Support Files */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -1084,6 +1092,7 @@
 				E6F34BEC5BFC3C30F2B71C1F1ED6D513 /* LIFEImageEditorSegmentedControl.h in Headers */,
 				04BCBA19F617F7E8155793E0521BA974 /* LIFEImageEditorView.h in Headers */,
 				EC642E1105F8E857046EAF536F955012 /* LIFEImageEditorViewController.h in Headers */,
+				C785DFDF296E128D00EA7E1F /* LIFEDisclosureIndicator.h in Headers */,
 				5CB7A7EA633A0135EF7327D10D44D0F4 /* LIFEImageFormat.h in Headers */,
 				F895C44CD1B794B5003CF5929DE97888 /* LIFEImagePickerController.h in Headers */,
 				24872BB1FB3746C2F3D16A3C3ADA44AC /* LIFEImageProcessor.h in Headers */,
@@ -1217,6 +1226,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					9DFCDB47D4060D37FB5651C0147728DC = {
+						LastSwiftMigration = 1420;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1368,6 +1382,7 @@
 				AEAC28DAB0CCF15908DA6C1ABD548F0C /* LIFEUserDefaults.m in Sources */,
 				305D9F35BD93C086E2384AE29D6539AA /* LIFEVideoAttachment.m in Sources */,
 				0597B4E2C1FB80E9F0B9A01B26ABF034 /* LIFEWhatHappenedTextView.m in Sources */,
+				C785DFDE296E113200EA7E1F /* LIFEDisclosureIndicator.m in Sources */,
 				07DFF5E72D977212808B9A4CF32DA941 /* LIFEWindowBlindsAnimator.m in Sources */,
 				9AEC1883D368F298CF791EC4F064FC5A /* NSArray+LIFEAdditions.m in Sources */,
 				56B8D261997AB1C91330CD29B2608F83 /* NSError+LIFEAdditions.m in Sources */,
@@ -1437,6 +1452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 080803C607D0E0ECCBE724D0C71B756B /* Buglife.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1626,6 +1642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 080803C607D0E0ECCBE724D0C71B756B /* Buglife.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1646,6 +1663,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

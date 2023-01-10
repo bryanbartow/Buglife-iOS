@@ -1,13 +1,13 @@
 //
 //  LIFEReportTableViewController.m
 //  Copyright (C) 2017 Buglife, Inc.
-//  
+//
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
 //  You may obtain a copy of the License at
-//  
+//
 //       http://www.apache.org/licenses/LICENSE-2.0
-//  
+//
 //  Unless required by applicable law or agreed to in writing, software
 //  distributed under the License is distributed on an "AS IS" BASIS,
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -52,6 +52,7 @@
 #import "LIFEAVPlayerViewController.h"
 #import "LIFENavigationController.h"
 #import "LIFEImageEditorViewController.h"
+#import "LIFEDisclosureIndicator.h"
 
 typedef NSString LIFEInputFieldValue;
 
@@ -195,6 +196,8 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
     [super viewDidLoad];
     
     self.title = [Buglife sharedBuglife].titleForReportViewController;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:LIFELocalizedString(LIFEStringKey_Report) style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -290,16 +293,16 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
 - (BOOL)_makeNextEmptyFieldFirstResponder
 {
 //    NSIndexPath *topIndexPath;
-//    
+//
 //    // If the email field is hidden, or it already has text, skip to the what happened cell
 //    if (_emailFieldEnabled && self.userInputtedEmail.length < 1) {
 //        topIndexPath = [self _indexPathForEmailCell];
 //    } else {
 //        topIndexPath = [self _indexPathForWhatHappenedCell];
 //    }
-//    
+//
 //    NSParameterAssert(topIndexPath != nil);
-//    
+//
 //    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:topIndexPath];
 //    return [cell becomeFirstResponder];
     
@@ -472,7 +475,7 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
     CGRect loadingViewRect = loadingViewParent.frame;
     UIView *loadingView = [[UIView alloc] initWithFrame:loadingViewRect];
     loadingView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
-    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [loadingView addSubview:activityIndicatorView];
     activityIndicatorView.center = loadingView.center;
     [loadingViewParent addSubview:loadingView];
@@ -646,8 +649,12 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
     if (indexPath.section == kAttachmentSectionNumber) {
         if ([indexPath isEqual:[self _indexPathForAddAttachmentCell]]) {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDefaultCellIdentifier forIndexPath:indexPath];
+            cell.backgroundColor = [UIColor whiteColor];
             cell.textLabel.text = LIFELocalizedString(LIFEStringKey_AttachPhoto);
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.textColor = [UIColor blackColor];
+            cell.tintColor = [UIColor blackColor];
+            cell.accessoryView = [[LIFEDisclosureIndicator alloc] initWithColor: [UIColor blackColor]];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         } else {
             LIFEAttachmentCell *cell = [tableView dequeueReusableCellWithIdentifier:[LIFEAttachmentCell defaultIdentifier] forIndexPath:indexPath];
@@ -660,6 +667,10 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
                 LIFEVideoAttachment *videoAttachment = (LIFEVideoAttachment *)userFacingAttachment;
                 [self _configureCell:cell withVideoAttachment:videoAttachment];
             }
+          
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.tintColor = [UIColor blackColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
             return cell;
         }
@@ -669,32 +680,42 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
         
         if ([inputField isKindOfClass:[LIFEPickerInputField class]]) {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPickerCellIdentifier forIndexPath:indexPath];
+            cell.backgroundColor = [UIColor whiteColor];
             cell.textLabel.text = currentInputFieldValue;
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.textColor = [UIColor blackColor];
+            cell.tintColor = [UIColor blackColor];
+            cell.accessoryView = [[LIFEDisclosureIndicator alloc] initWithColor: [UIColor blackColor]];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         } else if ([inputField isKindOfClass:[LIFETextInputField class]]) {
             let textInputField = (LIFETextInputField *)inputField;
             
             if (textInputField.isMultiline) {
                 LIFEWhatHappenedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[LIFEWhatHappenedTableViewCell defaultIdentifier] forIndexPath:indexPath];
+                cell.backgroundColor = [UIColor whiteColor];
+                cell.tintColor = [UIColor blackColor];
                 cell.textView.placeholderText = textInputField.placeholder;
                 cell.textView.accessibilityLabel = textInputField.placeholder;
                 cell.textView.text = currentInputFieldValue;
                 cell.textView.inputField = inputField;
                 cell.textView.lifeDelegate = self;
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
                 return cell;
             } else {
                 LIFETextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:[LIFETextFieldCell defaultIdentifier] forIndexPath:indexPath];
                 cell.delegate = self;
+                cell.backgroundColor = [UIColor whiteColor];
+                cell.tintColor = [UIColor blackColor];
                 cell.textField.placeholder = textInputField.placeholder;
                 cell.textField.returnKeyType = UIReturnKeyNext;
                 cell.inputField = inputField;
-                
                 cell.textField.autocorrectionType = UITextAutocorrectionTypeDefault;
                 cell.textField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
                 cell.textField.keyboardType = UIKeyboardTypeDefault;
                 cell.textField.text = currentInputFieldValue;
+                cell.textField.textColor = [UIColor blackColor];
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
                 if (inputField.isUserEmailField) {
                     cell.textField.autocorrectionType = UITextAutocorrectionTypeNo;
@@ -858,6 +879,14 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
             pickerViewController.pickerDelegate = self;
             [self.navigationController pushViewController:pickerViewController animated:YES];
         }
+    }
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    if([view isKindOfClass:[UITableViewHeaderFooterView class]]) {
+        UITableViewHeaderFooterView * headerView = (UITableViewHeaderFooterView *) view;
+        headerView.textLabel.textColor  = [UIColor blackColor];
     }
 }
 

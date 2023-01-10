@@ -108,6 +108,7 @@
 - (void)_configureNavigationBarAppearance
 {
     id<LIFEAppearance> appearance = [LIFEAppearanceImpl sharedAppearance];
+    self.view.backgroundColor = appearance.barTintColor;
     self.navigationBar.tintColor = appearance.tintColor;
     self.navigationBar.barTintColor = appearance.barTintColor;
     self.navigationBar.titleTextAttributes = appearance.titleTextAttributes;

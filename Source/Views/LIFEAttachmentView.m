@@ -76,9 +76,9 @@ static const CGFloat kScreenshotViewPadding = 5;
         [_activityIndicatorView.centerXAnchor constraintEqualToAnchor:_screenshotView.centerXAnchor].active = YES;
         [_activityIndicatorView.centerYAnchor constraintEqualToAnchor:_screenshotView.centerYAnchor].active = YES;
         
-        [_disclosureIndicatorView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-16].active = YES;
+        [_disclosureIndicatorView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-20].active = YES;
         [_disclosureIndicatorView.centerYAnchor constraintEqualToAnchor:self.centerYAnchor].active = YES;
-        [_disclosureIndicatorView.widthAnchor constraintEqualToConstant:8].active = YES;
+        [_disclosureIndicatorView.widthAnchor constraintEqualToConstant:10].active = YES;
         
         [_textLabel.leadingAnchor constraintEqualToAnchor:_screenshotView.trailingAnchor constant:10].active = YES;
         [_textLabel.trailingAnchor constraintEqualToAnchor:_disclosureIndicatorView.leadingAnchor].active = YES;
@@ -119,7 +119,7 @@ static const CGFloat kScreenshotViewPadding = 5;
         disclosureIndicatorImage = disclosureIndicatorImage.imageFlippedForRightToLeftLayoutDirection;
     }
     
-    _disclosureIndicatorView.image = disclosureIndicatorImage;
+    _disclosureIndicatorView.image = [disclosureIndicatorImage imageWithTintColor:[UIColor blackColor]];
 }
 
 @end

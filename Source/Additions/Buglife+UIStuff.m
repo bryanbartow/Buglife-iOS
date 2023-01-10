@@ -131,7 +131,7 @@ typedef void (^LIFEAlertOrUIAlertActionHandler)(NSObject *action);
         self.reportAlertOrWindowVisible = NO;
     };
     
-    UIViewController *alert = [self alertControllerWithTitle:message image:screenshot preferredStyle:style reportHandler:reportHandler disableActionTitle:disableTitle disableHandler:disableHandler cancelHandler:cancelHandler];;
+    UIViewController *alert = [self alertControllerWithTitle:message image:screenshot preferredStyle:style reportHandler:reportHandler disableActionTitle:disableTitle disableHandler:disableHandler cancelHandler:cancelHandler];
     
     if (!self.useLegacyReporterUI) {
         [self _showContainerWindowWithViewController:alert animated:YES completion:nil];
@@ -139,6 +139,8 @@ typedef void (^LIFEAlertOrUIAlertActionHandler)(NSObject *action);
         LIFEOverlayWindow *alertWindow = [LIFEOverlayWindow overlayWindow];
         alertWindow.hidden = NO;
         [alertWindow.rootViewController presentViewController:alert animated:YES completion:NULL];
+        [alert.view setTintColor: self.appearance.tintColor];
+
         self.overlayWindow = alertWindow;
         self.reportAlertOrWindowVisible = YES;
     }

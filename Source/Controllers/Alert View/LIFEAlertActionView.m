@@ -49,18 +49,10 @@ let kFontSize = 17.0f;
         
         if (style == UIAlertActionStyleDestructive) {
             _titleLabel.textColor = [UIColor redColor];
+        } else if (style == UIAlertActionStyleCancel) {
+            _titleLabel.textColor = [UIColor systemGray2Color];
         } else {
-            UIColor *tintColor = [LIFEAppearanceImpl sharedAppearance].tintColor;
-            BOOL isTintColorDark = ![tintColor life_isLightColor];
-            UIColor *textColor;
-            
-            if (isTintColorDark) {
-                textColor = tintColor;
-            } else {
-                textColor = [LIFEAppearanceImpl sharedAppearance].barTintColor;
-            }
-            
-            _titleLabel.textColor = textColor;
+            _titleLabel.textColor = [LIFEAppearanceImpl sharedAppearance].tintColor;
         }
         
         [self addSubview:_titleLabel];
