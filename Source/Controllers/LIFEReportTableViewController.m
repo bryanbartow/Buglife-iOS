@@ -694,6 +694,7 @@ static const NSInteger kNoCurrentEditingAnnotatedImage = NSNotFound;
                 LIFEWhatHappenedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[LIFEWhatHappenedTableViewCell defaultIdentifier] forIndexPath:indexPath];
                 cell.backgroundColor = [UIColor whiteColor];
                 cell.tintColor = [UIColor blackColor];
+                cell.textView.textColor = [UIColor blackColor];
                 cell.textView.placeholderText = textInputField.placeholder;
                 cell.textView.accessibilityLabel = textInputField.placeholder;
                 cell.textView.text = currentInputFieldValue;
