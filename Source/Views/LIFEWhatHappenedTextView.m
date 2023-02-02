@@ -57,6 +57,7 @@ static CGFloat SNRInputViewWidthForBoundsWidth(CGFloat boundsWidth);
         _textViewImpl = [[UITextView alloc] init];
         _textViewImpl.delegate = self;
         _textViewImpl.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        _textViewImpl.textColor = [UIColor blackColor];
         _textViewImpl.scrollEnabled = YES;
         _textViewImpl.backgroundColor = [UIColor clearColor];
         _textViewImpl.keyboardAppearance = UIKeyboardAppearanceDark;
